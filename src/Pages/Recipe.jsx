@@ -23,7 +23,7 @@ function Recipe() {
 
   return (
     <DetailWrapper>
-          <div>
+          <div className="first">
               <h2>{details.title}</h2>
               <img src={details.image} alt="" />
           </div>
@@ -49,30 +49,43 @@ function Recipe() {
 };
 
 const DetailWrapper = styled.div`
-    margin-top: 10rem;
-    margin-bottom: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 2.5rem;
     display: flex;
+    .first{
+
+        width: 50%;
+
+        img{
+            width: 18rem;
+            height: 13rem;
+        }
+    }
+
     .active{
         background: linear-gradient(35deg, #494949, #313131);
         color: white;
     }
     h2{
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
+        font-size: 0.8rem;
     }
     h3{
-        font-size: 1.6rem;
+        font-size: 0.7rem;
     }
     li{
-        font-size: 1.2rem;
-        line-height: 2.5rem;
+        font-size: 0.7rem;
+        line-height: 1.5rem;
     }
     ul{
         margin-top: 2rem;
+        margin: 2rem 0rem;
     }
 `;
 
 const Button = styled.button`
-    padding: 1rem 2rem;
+    padding: 0.7rem 2rem;
+    font-size: 0.7rem;
     color: #313131;
     background: white;
     border: 2px solid black;
@@ -81,7 +94,7 @@ const Button = styled.button`
 `;
 
 const Info = styled.div`
-    margin-left: 10rem;
+    margin-left: 5rem;
 `;
 
 export default Recipe;
