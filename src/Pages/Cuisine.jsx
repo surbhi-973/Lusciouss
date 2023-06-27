@@ -43,20 +43,22 @@ function Cuisine() {
 
 const Grid = styled(motion.div)`
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    grid-gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-gap: 1.5rem;
+    margin: 2.2rem 3rem;
 `;
 const Card = styled.div`
+    margin:0rem;
     img{
         width: 100%;
-        border-radius: 2rem;
+        border-radius: 1rem;
     }
     a{
         text-decoration: none;
     }
     h4{
         text-align: center;
-        padding: 1rem;
+        padding: 0.3rem;
     }
 `;
 
