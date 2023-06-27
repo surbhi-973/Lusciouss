@@ -37,13 +37,14 @@ function Searched() {
 
 const Grid = styled.div`
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    grid-gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-gap: 1.5rem;
+    margin: 2.2rem 3rem;
 `;
 const Card = styled.div`
     img{
         width: 100%;
-        border-radius: 2rem;
+        border-radius: 1rem;
     }
     a{
         text-decoration: none;
